@@ -50,7 +50,7 @@ class SSProduct {
         let data = {
             products: skus
         };
-        let url =  new URL(`${_.API_SHOP_ENDPOINT}${_.SITE_CODE}/servicesv2/addToCart/`);
+        let url =  new URL(`${_.API_SHOP_ENDPOINT}${_.SITE_CODE}/servicesv2/addToCart`);
         return $.ajax({
             url: url.toString(),
             method: 'POST',
@@ -66,7 +66,7 @@ class SSProduct {
 
     _addToCartV1(skus) {
         let _ = this;
-        let url = new URL(`${_.API_SHOP_ENDPOINT}${_.SITE_CODE}/ng/p4v1/addToCart/`);
+        let url = new URL(`${_.API_SHOP_ENDPOINT}${_.SITE_CODE}/ng/p4v1/addToCart`);
         skus.map((item, i) => {
             url.searchParams.append(`products[${i}].productCode`,item.productCode.toString().toUpperCase());
             url.searchParams.append(`products[${i}].quantity`, parseInt(item.quantity) || 1);
