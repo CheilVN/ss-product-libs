@@ -3,6 +3,9 @@
 @powerby CheilVN Dev Team
 ## Get Started 🚀  
 
+~~~html  
+    <script src="https://cdn.jsdelivr.net/gh/CheilVN/ss-product-libs@v1.0/app.min.js"></script>
+~~~
 ~~~javascript  
     const CheilVNSsApp = new SSProduct({
         siteCode: 'ph',
