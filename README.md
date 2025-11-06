@@ -11,8 +11,9 @@
 ~~~
 ~~~javascript  
     const CheilVNSsApp = new SSProduct({
-        siteCode: 'ph',
-        apiVersion: 'v2'
+        siteCode: 'vn', //ph, my ...
+        apiVersion: 'v2', //V1
+        apiStyle: 'global' // newhybrid
     });
 
     const ADDTOCART_SKUS = [

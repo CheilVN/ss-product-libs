@@ -10,10 +10,10 @@ class SSProduct {
     constructor(config = {}) {
         try {
             if (typeof jQuery === 'undefined') throw new Error('jQuery is not defined. Please include jQuery before using SSProduct.');
-
-            const {siteCode, apiVersion} = config;
+            const {siteCode, apiVersion, apiStyle } = config;
             if (siteCode) this.setSiteCode(siteCode);
             if (apiVersion) this.setApiVersion(apiVersion);
+            if (apiStyle) this.setApiStyle(apiStyle);
         } catch (e) {
 
         }
