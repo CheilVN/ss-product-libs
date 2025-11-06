@@ -18,7 +18,7 @@
     const ADDTOCART_SKUS = [
         { productCode: 'VCC8836V36/XSV', quantity: 2 },
         { productCode: 'VC18M21M0VN/SV', quantity: 1 },
-        { productCode: 'AW40F09D0ATNTC', quantityquantity: 3 }
+        { productCode: 'AW40F09D0ATNTC', quantity: 3 }
     ];
     const SKUS = ['VCC8836V36/XSV','VC18M21M0VN/SV','AW40F09D0ATNTC'];
 
