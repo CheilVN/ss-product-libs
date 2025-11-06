@@ -23,20 +23,20 @@
     const SKUS = ['VCC8836V36/XSV','VC18M21M0VN/SV','AW40F09D0ATNTC'];
 
     async function init() {
-        const simpleProductInfo = await APP.getSimpleProductInfo(SKUS);
+        const simpleProductInfo = await CheilVNSsApp.getSimpleProductInfo(SKUS);
         console.log(simpleProductInfo);
 
-        const productStockStatus = await APP.getProductStockStatus(SKUS);
+        const productStockStatus = await CheilVNSsApp.getProductStockStatus(SKUS);
         console.log(productStockStatus);
 
-        const isInstock = await APP.isInstock('VC18M21M0VN/SV');
+        const isInstock = await CheilVNSsApp.isInstock('VC18M21M0VN/SV');
         console.log(isInstock);
 
-        const productDetailData = await APP.getProductInfoBySkus(['AW40F09D0ATNTC']);
+        const productDetailData = await CheilVNSsApp.getProductInfoBySkus(['AW40F09D0ATNTC']);
         console.log( productDetailData);
 
-        const addToCartResult = await APP.addToCart(ADDTOCART_SKUS, 'v1');
-        const addToCartResultV2 = await APP.addToCart(ADDTOCART_SKUS, 'v2');
+        const addToCartResult = await CheilVNSsApp.addToCart(ADDTOCART_SKUS, 'v1');
+        const addToCartResultV2 = await CheilVNSsApp.addToCart(ADDTOCART_SKUS, 'v2');
     }
     init();
 ~~~  
